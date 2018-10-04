@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         initToolbar();
+        verifyPermissions();
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,7 +148,6 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        verifyPermissions();
     }
 
 
