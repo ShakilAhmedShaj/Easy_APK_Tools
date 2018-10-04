@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //Permission
+    //Permission Start
 
 
     private void verifyPermissions() {
@@ -133,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
                 permissions[1]) == PackageManager.PERMISSION_GRANTED
                 && ContextCompat.checkSelfPermission(this.getApplicationContext(),
                 permissions[2]) == PackageManager.PERMISSION_GRANTED) {
-            //setupViewPager();
         } else {
             ActivityCompat.requestPermissions(MainActivity.this,
                     permissions,
@@ -148,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //End Permission
+    //Permission End
 
 
     private void initToolbar() {
