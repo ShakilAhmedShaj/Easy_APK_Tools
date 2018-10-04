@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         initToolbar();
-        //prepareAds();
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -259,26 +258,4 @@ public class MainActivity extends AppCompatActivity {
         return f.floatValue();
     }
 
-//    private void prepareAds(){
-//        mAdView = (AdView) findViewById(R.id.ad_view);
-//        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
-//        // Start loading the ad in the background.
-//        mAdView.loadAd(adRequest);
-//
-//        // Create the InterstitialAd and set the adUnitId.
-//        mInterstitialAd = new InterstitialAd(this);
-//        mInterstitialAd.setAdUnitId(getString(R.string.interstitial_ad_unit_id));
-//        AdRequest adRequest2 = new AdRequest.Builder().build();
-//        mInterstitialAd.loadAd(adRequest2);
-//    }
-//
-//    /**
-//     * show ads
-//     */
-//    public void showInterstitial() {
-//        // Show the ad if it's ready
-//        if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-//            mInterstitialAd.show();
-//        }
-//    }
 }
