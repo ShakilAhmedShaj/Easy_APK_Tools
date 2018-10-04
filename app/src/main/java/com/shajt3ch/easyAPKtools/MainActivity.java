@@ -33,10 +33,7 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 public class MainActivity extends AppCompatActivity {
-    //ads
-    private AdView mAdView;
-    //for ads
-    private InterstitialAd mInterstitialAd;
+
     //public static Toolbar toolbar;
     public static BackupFragment frag_backup;
     private RestoreFragment frag_restore;
